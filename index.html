@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CWA Legacy</title>
+    <meta name="description" content="CWA Legacy — Built on Oxide." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-0: #060a16;
+        --bg-1: #0b1226;
+        --border: rgba(91, 225, 244, 0.22);
+        --holo: #5be1f4;
+        --republic: #ff3b1d;
+        --text: #e8eefc;
+        --muted: #8da0c4;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+
+      body {
+        color: var(--text);
+        font-family: Inter, "Segoe UI", system-ui, Arial, sans-serif;
+        background: radial-gradient(
+            1200px 700px at 50% -10%,
+            #16224a 0%,
+            var(--bg-1) 45%,
+            var(--bg-0) 100%
+          )
+          fixed;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        overflow: hidden;
+      }
+
+      /* Subtle starfield via layered radial dots. */
+      .starfield {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.5;
+        background-image: radial-gradient(1.5px 1.5px at 20% 30%, #ffffff55, transparent),
+          radial-gradient(1.5px 1.5px at 70% 60%, #ffffff44, transparent),
+          radial-gradient(1px 1px at 40% 80%, #ffffff33, transparent),
+          radial-gradient(1px 1px at 85% 25%, #ffffff33, transparent),
+          radial-gradient(1.5px 1.5px at 55% 15%, #ffffff22, transparent);
+      }
+
+      .hero {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        animation: rise 0.6s ease-out both;
+      }
+
+      .title {
+        margin: 0;
+        font-size: clamp(48px, 12vw, 104px);
+        letter-spacing: clamp(6px, 2.2vw, 18px);
+        font-weight: 800;
+        line-height: 1;
+        background: linear-gradient(180deg, #ffffff, var(--holo));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 40px rgba(91, 225, 244, 0.25);
+      }
+
+      .tagline {
+        margin: 14px 0 0;
+        font-size: clamp(13px, 2.5vw, 17px);
+        letter-spacing: 3px;
+        color: var(--muted);
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 44px;
+        padding: 15px 40px;
+        border-radius: 12px;
+        border: 1px solid transparent;
+        background: linear-gradient(180deg, #ff5a3c, var(--republic));
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        cursor: pointer;
+        box-shadow: 0 8px 26px rgba(255, 59, 29, 0.35);
+        transition: transform 0.08s ease, box-shadow 0.15s ease;
+      }
+
+      .btn:hover {
+        box-shadow: 0 10px 34px rgba(255, 59, 29, 0.55);
+      }
+
+      .btn:active {
+        transform: translateY(1px);
+      }
+
+      .subtext {
+        margin: 16px 0 0;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        color: var(--muted);
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 16px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: var(--muted);
+        z-index: 1;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="starfield" aria-hidden="true"></div>
+
+    <main class="hero">
+      <h1 class="title">CWA LEGACY</h1>
+      <p class="tagline">Built on Oxide.</p>
+
+      <!-- Replace the href with your launcher download link
+           (e.g. a GitHub Release .exe URL) before publishing. -->
+      <a class="btn" href="#">Download Launcher</a>
+      <p class="subtext">Windows installer</p>
+    </main>
+
+    <footer class="footer">CWA Legacy &middot; Built on Oxide.</footer>
+  </body>
+</html>
