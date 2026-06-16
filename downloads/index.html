@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download — CWA Legacy</title>
+    <meta
+      name="description"
+      content="Download the CWA Legacy Launcher and follow the getting-started guide to install, create your account, and start playing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="starfield" aria-hidden="true"></div>
+
+    <nav class="nav">
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/downloads/" class="active">Downloads</a>
+        <a href="/roadmap/">Roadmap</a>
+        <a href="/announcements/">Announcements</a>
+      </div>
+      <a class="brand" href="/">CWA LEGACY</a>
+    </nav>
+
+    <header class="hero">
+      <h1 class="title">CWA LEGACY</h1>
+      <p class="tagline">Built on Oxide.</p>
+      <a
+        class="btn"
+        href="https://github.com/nickcards/CWA-Legacy/releases/latest/download/CWA-Legacy-Setup.exe"
+        >Download Launcher</a
+      >
+      <p class="subtext">Windows installer &middot; v2.0.0</p>
+    </header>
+
+    <main class="page">
+      <div class="notice">
+        <h3>Heads up: SmartScreen warning</h3>
+        <p class="muted">
+          The launcher is distributed as an unsigned executable, so Windows may
+          show a Microsoft Defender SmartScreen warning. This is expected and
+          does <strong>not</strong> mean the launcher contains malware. Click
+          <em>More info → Run anyway</em> to continue. Always download the
+          launcher directly from this official website.
+        </p>
+      </div>
+
+      <section class="section">
+        <h2>Getting Started Guide</h2>
+
+        <div class="card">
+          <div class="card-head"><h3>Installation &amp; Setup</h3></div>
+          <ul class="clean">
+            <li>
+              After installing the CWA Legacy Launcher, you'll be prompted to
+              select your Clone Wars Adventures client folder.
+            </li>
+            <li>
+              The selected folder must contain the original
+              <strong>CloneWars.exe</strong> file. The launcher automatically
+              verifies the file path and notifies you if the executable can't be
+              found.
+            </li>
+            <li>
+              If you use another Oxide-based server, we recommend creating a
+              separate copy of your client files for CWA Legacy.
+            </li>
+            <li>
+              Once the launcher points to a valid client folder, it will guide
+              you through account creation and login.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-head"><h3>First Login &amp; Character Creation</h3></div>
+          <p>
+            Your account username is <strong>not</strong> your in-game display
+            name — similar to how the original Clone Wars Adventures account
+            system worked.
+          </p>
+          <p>
+            After creating your account, setting your password, and configuring
+            your security questions, you'll be brought to the character creation
+            screen.
+          </p>
+          <p class="eyebrow" style="margin-bottom: 4px">Character Creation Options</p>
+          <ul class="clean">
+            <li>First Name <span class="muted">(Required)</span></li>
+            <li>Last Name <span class="muted">(Optional)</span></li>
+            <li>Gender</li>
+            <li>Species</li>
+          </ul>
+          <hr class="divider" />
+          <p class="eyebrow" style="margin-top: 4px; margin-bottom: 4px">Important Notes</p>
+          <ul class="clean">
+            <li>Species can be changed later in-game.</li>
+            <li>Gender cannot currently be changed after character creation.</li>
+            <li>
+              The Clone species is only available with the Male gender option.
+              <span class="muted">(CWA predates The Bad Batch.)</span>
+            </li>
+            <li>
+              After entering the game, you can further customize your character
+              through the in-game customization menu.
+            </li>
+            <li>
+              Character customization costs credits; however, all new players
+              start with enough credits to fully customize their character.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Current Feature Status</h2>
+
+        <p class="eyebrow">Social &amp; Player Features</p>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Character Customization</h3>
+            <span class="badge ok">Implemented</span>
+          </div>
+          <p class="muted">Fully saved to your character account.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Player Profile</h3>
+            <span class="badge warn">Partial</span>
+          </div>
+          <p class="muted">
+            Players can edit several profile settings that are visible to other
+            players. Online and offline status is also displayed.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Friends List</h3>
+            <span class="badge warn">Partial</span>
+          </div>
+          <p class="muted">
+            Friend requests are currently accepted automatically when sent.
+            Current functionality includes:
+          </p>
+          <ul class="clean">
+            <li>Online/offline status tracking</li>
+            <li>Private messaging through the friends list</li>
+          </ul>
+        </div>
+
+        <p class="eyebrow">Minigames</p>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Stability</h3>
+            <span class="badge bad">Known Issues</span>
+          </div>
+          <p class="muted">
+            Some minigames may crash the first time they're loaded. Others may
+            occasionally crash during gameplay.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Stage Progression</h3>
+            <span class="badge ok">Implemented</span>
+          </div>
+          <p class="muted">
+            Stage locks and unlocks are tracked and saved to your account.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>High Scores</h3>
+            <span class="badge ok">Implemented</span>
+          </div>
+          <p class="muted">
+            High scores are saved and displayed across the server. Compare your
+            scores against other players and compete for the top spots.
+            <em>(See if you can beat my Stunt Gungan score!)</em>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Credit Rewards</h3>
+            <span class="badge ok">Implemented</span>
+          </div>
+          <p class="muted">
+            Credits earned from minigames are awarded to your character and
+            permanently saved.
+          </p>
+        </div>
+
+        <p class="eyebrow">Store</p>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Purchases</h3>
+            <span class="badge bad">Known Issues</span>
+          </div>
+          <p class="muted">
+            Store purchases are functioning and items are successfully added to
+            your inventory. After completing a purchase, you'll see a
+            "Processing" screen that may remain for 1–2 minutes before showing an
+            error message. Although the error appears, the purchased item is
+            still successfully delivered to your inventory. This issue is being
+            investigated.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Item Sets View</h3>
+            <span class="badge warn">Partial</span>
+          </div>
+          <p class="muted">
+            Gear sets can be viewed. The "Buy Now" button for entire sets is not
+            currently functional, but individual pieces can still be purchased
+            from the set view.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Single Item View</h3>
+            <span class="badge ok">Implemented</span>
+          </div>
+          <p class="muted">Purchasing works for:</p>
+          <ul class="clean">
+            <li>Gear</li>
+            <li>Weapons</li>
+            <li>Mounts</li>
+            <li>Pets</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      CWA Legacy &middot; Built on Oxide &middot; Questions? Discord
+      <strong>@nickcards</strong>
+    </footer>
+  </body>
+</html>
